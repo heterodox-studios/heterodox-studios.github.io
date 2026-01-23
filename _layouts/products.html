@@ -1,0 +1,13 @@
+---
+title: My First Page
+layout: default
+---
+
+
+{% for product in site.products %}
+<h2>
+    <a href="{{ product.url }}">
+        {{ product.title }} - {{ product.position }}
+    </a>
+</h2>
+{% endfor %}
