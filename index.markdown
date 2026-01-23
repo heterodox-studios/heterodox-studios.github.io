@@ -5,9 +5,6 @@
 layout: home
 ---
 
-# Heterodox
-
-## Show. Your. Workings!
 
 We are a small design studio in Stockholm, Sweden.
 
