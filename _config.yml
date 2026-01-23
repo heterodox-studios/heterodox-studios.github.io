@@ -27,6 +27,8 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://heterodox-studios.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
+google_analytics: [G-7BRLJBZEKR]
+
 # twitter_username: jekyllrb
 github_username:  heterodox-studios
 
