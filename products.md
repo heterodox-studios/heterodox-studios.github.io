@@ -1,3 +1,4 @@
 ---
 layout: products
+title: "Products"
 ---
