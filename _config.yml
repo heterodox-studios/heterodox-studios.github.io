@@ -39,7 +39,7 @@ pinterest_username: heterodoxstudios
 
 
 # Build settings
-# theme: minima
+date_format: "%Y-%m-%d"
 
 plugins:
   - jekyll-feed
