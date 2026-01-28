@@ -1,0 +1,13 @@
+---
+title: My First Page
+layout: default
+---
+
+{% assign top_level = site.projects | where_exp: 'item', "item.path contains '/index.md'" %}
+{% for project in top_level %}
+<h2>
+    <a href="{{ project.url }}">
+        {{ project.title }} - {{ project.path }}
+    </a>
+</h2>
+{% endfor %}

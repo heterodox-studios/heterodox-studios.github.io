@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Book Stand
-permalink: /products/book-stand
+permalink: /projects/book-stand
 ---
 
 book stand

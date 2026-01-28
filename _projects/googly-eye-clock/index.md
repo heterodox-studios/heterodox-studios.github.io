@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Googly Eye Clock
-permalink: /products/googly-eye-clock
+permalink: /projects/googly-eye-clock
 ---
 
 GEC
