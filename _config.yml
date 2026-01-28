@@ -34,6 +34,7 @@ github_username:  heterodox-studios
 facebook_username: heterodox.se
 instagram_username: heterodox_se
 youtube_username: "@Heterodox_se"
+linkedin_username: heterodox-se
 
 
 # Build settings
@@ -50,6 +51,7 @@ collections:
 header_pages:
   - about.md
   - products.md
+  - socials.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
