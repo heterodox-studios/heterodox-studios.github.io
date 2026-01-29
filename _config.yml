@@ -27,7 +27,8 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://heterodox-studios.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-google_analytics: [G-7BRLJBZEKR]
+# It seems innordinately complicated to do the cookie banner thing so skipping it for now.
+# google_analytics: [G-7BRLJBZEKR]
 
 # Build settings
 date_format: "%Y-%m-%d"
