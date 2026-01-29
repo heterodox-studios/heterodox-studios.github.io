@@ -29,15 +29,6 @@ url: "https://heterodox-studios.github.io/" # the base hostname & protocol for y
 
 google_analytics: [G-7BRLJBZEKR]
 
-# twitter_username: jekyllrb
-github_username:  heterodox-studios
-facebook_username: heterodox.se
-instagram_username: heterodox_se
-youtube_username: "@Heterodox_se"
-linkedin_username: heterodox-se
-pinterest_username: heterodoxstudios
-
-
 # Build settings
 date_format: "%Y-%m-%d"
 

@@ -1,46 +1,18 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-body-secondary">
+    <p class="col-md-4 mb-0">Heterodox AB - Org nr: 559424-1092 - <a href="mailto:info@heterodox.se">info@heterodox.se</a></p>
+    
+    {%- include social.html -%}
 
-  <div class="wrapper">
+    <p class="col-md-4 d-flex justify-content-end mb-3 mb-md-0 me-md-auto">
+      &copy;{{ site.time | date: "%Y" }}
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <img src="{{ '/assets/icons/by-nc-sa.svg' | relative_url }}"
+          alt="Attribution-NonCommercial-ShareAlike 4.0 International"
+          style="max-height:1.5em"
+          >
+      </a>      
+    </p>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Heterodox AB - Org nr: 559424-1092 - <a href="mailto:info@heterodox.se">info@heterodox.se</a></p>
-        <p>
-          This website is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img
-            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-            src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;">
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+  </footer>
+</div>
