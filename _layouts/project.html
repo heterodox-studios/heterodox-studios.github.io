@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+<div class="row justify-content-center p-4 m-4">
+
+  {% assign hero = page.images | first %}
+
+  <div class="col-3">
+    <img src="{{ hero.src }}" class="d-block float-end img-fluid  rounded-4 border shadow" alt="{{ hero.alt | escape }}"
+      loading="lazy">
+  </div>
+
+  <div class="col-5">
+    <h1 class="text-body-emphasis lh-1 mb-3">{{ page.title | escape }}</h1>
+
+    {{ page.summary | markdownify }}
+  </div>
+
+</div>
+
+<hr />
+
+<div class="row mt-4 justify-content-center">
+  {% for image in page.images %}
+  <div class="col-sm-auto">
+
+    <a href="{{ image.src }}">
+      <img src="{{ image.src }}" class="rounded-3 border shadow" alt="{{ image.alt | escape }}" width="100" height="100"
+        loading="lazy">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<hr />
+
+<div class="row mt-4">
+  {{ content }}
+</div>
