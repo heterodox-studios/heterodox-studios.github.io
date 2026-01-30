@@ -2,6 +2,9 @@
 layout: project
 title: Googly Eye Clock
 permalink: /projects/googly-eye-clock
+
+# idea, active, stalled, completed
+status: active
 summary:
   Keeping an eye on the time? This clock keeps an eye on you!
 

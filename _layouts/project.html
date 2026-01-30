@@ -15,7 +15,23 @@ layout: default
   <div class="col-5">
     <h1 class="text-body-emphasis lh-1 mb-3">{{ page.title | escape }}</h1>
 
+
     {{ page.summary | markdownify }}
+
+
+    {% if page.status == "idea" %}
+      <button type="button" class="btn btn-info bi-lightbulb">&nbsp;Just an idea...</button>
+    {% elsif page.status == "active" %}
+      <button type="button" class="btn btn-warning bi-rocket-takeoff-fill">&nbsp;Working on it now!</button>
+    {% elsif page.status == "stalled" %}
+      <button type="button" class="btn btn-secondary bi-hourglass-split">&nbsp;Stalled</button>
+    {% elsif page.status == "completed" %}
+      <button type="button" class="btn btn-success bi-hand-thumbs-up-fill">&nbsp;Completed!</button>
+    {% else %}
+      <button type="button" class="btn btn-danger bi-bug-fill">&nbsp;BAD STATUS</button>
+    {% endif %}
+    <br/>
+
 
     {% for link in page.links %}
       <a class="bi bi-link-45deg" href="{{ link.url | escape  }}">{{ link.txt }}</a><br />
