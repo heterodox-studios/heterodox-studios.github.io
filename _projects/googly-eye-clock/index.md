@@ -5,6 +5,12 @@ permalink: /projects/googly-eye-clock
 summary:
   Keeping an eye on the time? This clock keeps an eye on you!
 
+links:
+  - url: https://github.com/heterodox-studios/GooglyEyeClock-DIY
+    txt: Code on GitHub
+  - url: https://cad.onshape.com/documents/bb07107bfad1942dafd74d3c
+    txt: CAD file on onshape
+
 images:  
   - src: "hero.jpeg"
     alt: "Googly eye clock"

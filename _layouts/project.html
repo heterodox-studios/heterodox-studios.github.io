@@ -16,6 +16,11 @@ layout: default
     <h1 class="text-body-emphasis lh-1 mb-3">{{ page.title | escape }}</h1>
 
     {{ page.summary | markdownify }}
+
+    {% for link in page.links %}
+      <a class="bi bi-link-45deg" href="{{ link.url | escape  }}">{{ link.txt }}</a><br />
+    {% endfor %}
+
   </div>
 
 </div>
