@@ -43,7 +43,7 @@ collections:
 
 header_pages:
   - about.md
-  - projects.md
+  - projects.html
   - socials.md
 
 # Exclude from processing.

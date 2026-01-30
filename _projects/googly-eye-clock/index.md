@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Googly Eye Clock
-permalink: /projects/googly-eye-clock
+permalink: /projects/googly-eye-clock/
 
 # idea, active, stalled, completed
 status: active

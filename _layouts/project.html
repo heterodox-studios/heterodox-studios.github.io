@@ -43,6 +43,7 @@ layout: default
 
 <hr />
 
+{% if page.images.size > 1 %}
 <div class="container my-4 text-center">
   {% for image in page.images %}
 
@@ -54,6 +55,7 @@ layout: default
 </div>
 
 <hr />
+{% endif %}
 
 <div class="row mt-4">
   {{ content }}
