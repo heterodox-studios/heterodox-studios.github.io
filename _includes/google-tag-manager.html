@@ -1,0 +1,50 @@
+<link rel="stylesheet" id="silktide-consent-manager-css" href="/assets/cookie-banner/silktide-consent-manager.css">
+
+<script>
+  // Initialize the dataLayer
+  window.dataLayer = window.dataLayer || [];
+
+  // Create the gtag function that pushes to the dataLayer
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  // Set consent defaults
+  gtag('consent', 'default', {
+    analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
+    ad_storage: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    ad_user_data: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    ad_personalization: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
+    security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ site.google_tag_manager  }}');</script>
+<!-- End Google Tag Manager -->
+
+
+<style>
+#silktide-cookie-icon {
+    display: none !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var cookieLink = document.getElementById('custom-cookie-link');
+
+    cookieLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        var cookieIcon = document.getElementById('silktide-cookie-icon');
+        cookieIcon.click();
+    });
+
+});
+</script>
+

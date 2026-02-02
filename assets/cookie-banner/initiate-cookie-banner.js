@@ -46,14 +46,4 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 });
 
 
-// We hide the cookie icon and use a link in footer instead. This code triggers an icon click when the link is clicked.
-document.addEventListener('DOMContentLoaded', function () {
-    var cookieLink = document.getElementById('custom-cookie-link');
-    var cookieIcon = document.getElementById('silktide-cookie-icon');
-
-    cookieLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        cookieIcon.click();
-    });
-});
 
