@@ -43,13 +43,11 @@
     </ul>
 
 
-    <p class="col-md-4 d-flex justify-content-end mb-3 mb-md-0 me-md-auto text-bg-primary">
-      &copy;{{ site.time | date: "%Y" }}
-      &nbsp;
-      <a class="text-bg-primary" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-        CC by-sa-nc
-      </a>      
-    </p>
+    <ul class="nav col-md-4 justify-content-end" style="gap: 0.6em;">
+      <li class="nav-item">&copy; {{ site.time | date: "%Y" }}</li>
+      <li class="nav-item"> <a class="text-bg-primary" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC by-sa-nc</a></li>
+      <li class="nav-item bi-cookie"> <a href="#" class="text-bg-primary" id="custom-cookie-link">Cookies</a></li>
+    </ul>
 
   </div>
 </footer>

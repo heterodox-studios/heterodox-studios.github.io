@@ -8,3 +8,8 @@ $primary: #a0a;
 @import "bootstrap-5.3.8/scss/bootstrap";
 
 // Then add additional custom code here
+
+// don't display the default floating cookie icon
+#silktide-cookie-icon {
+    display: none !important;
+}
