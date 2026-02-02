@@ -1,3 +1,4 @@
+{%- if jekyll.environment == 'production' -%}
 <script>
 if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -9,4 +10,14 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   ga('send', 'pageview');
 }
 </script>
+{% else  %}
+<script>
+  // Not in production, or not using analytics - fake parts needed by the code
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function() { console.log('Dummy Gtag:', arguments); };
+</script>
+{%- endif -%}
+
+
+
   
