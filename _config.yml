@@ -27,6 +27,8 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.heterodox.se" # the base hostname & protocol for your site, e.g. http://example.com
 
+github_blob_url: "https://github.com/heterodox-studios/heterodox-studios.github.io/blob/main/"
+
 google_analytics: "G-7BRLJBZEKR"
 google_tag_manager: "GTM-MCMTZ59S"
 
