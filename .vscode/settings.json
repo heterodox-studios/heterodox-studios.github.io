@@ -2,5 +2,6 @@
     "files.associations": {
         "*.html": "liquid"
     },
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "files.autoSave": "afterDelay"
 }

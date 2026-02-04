@@ -25,7 +25,9 @@ description: >-
   We are a small design studio in Stockholm, Sweden.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.heterodox.se" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.heterodox.se" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_blob_url: "https://github.com/heterodox-studios/heterodox-studios.github.io/blob/main/"
 
 google_analytics: "G-7BRLJBZEKR"
 google_tag_manager: "GTM-MCMTZ59S"
@@ -65,5 +67,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - CNAME
 #   - .sass-cache/
 #   - .jekyll-cache/
