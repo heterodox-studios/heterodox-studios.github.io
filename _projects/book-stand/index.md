@@ -9,7 +9,7 @@ summary:
   Don't use a tissue to mark your place, park your book on here instead.
 
 images:  
-  - src: "hero.jpeg"
+  - src: "images/hero.jpeg"
     alt: "Book stand"
 
 links:

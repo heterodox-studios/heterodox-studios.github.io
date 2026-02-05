@@ -17,19 +17,19 @@ links:
     icon: file-easel
 
 images:  
-  - src: "hero.jpeg"
+  - src: "images/hero.jpeg"
     alt: "Googly eye clock"
-  - src: "breadboard.jpeg"
+  - src: "images/breadboard.jpeg"
     alt: "" 
-  - src: "backside_and_breadboard.jpeg"
+  - src: "images/backside_and_breadboard.jpeg"
     alt: "" 
-  - src: "gear.jpeg"
+  - src: "images/gear.jpeg"
     alt: "" 
-  - src: "front.jpeg"
+  - src: "images/front.jpeg"
     alt: "" 
-  - src: "overview_on_bench.jpeg"
+  - src: "images/overview_on_bench.jpeg"
     alt: "" 
-  - src: "row_of_prototypes.jpeg"
+  - src: "images/row_of_prototypes.jpeg"
     alt: ""
 
 ---
