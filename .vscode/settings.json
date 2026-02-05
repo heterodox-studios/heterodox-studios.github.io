@@ -3,5 +3,5 @@
         "*.html": "liquid"
     },
     "editor.formatOnSave": false,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "onFocusChange"
 }
