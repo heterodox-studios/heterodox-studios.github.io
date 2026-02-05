@@ -33,9 +33,6 @@ layout: default
     <br/>
 
 
-    {% for link in page.links %}
-      <a class="bi bi-link-45deg" href="{{ link.url | escape  }}">{{ link.txt }}</a><br />
-    {% endfor %}
 
   </div>
 
@@ -57,6 +54,24 @@ layout: default
 <hr />
 {% endif %}
 
-<div class="row mt-4">
+<div class="clearfix">
+
+  {% if page.links.size > 1 %}
+    <div class="col-md-3 float-sm-end mb-3 ms-md-3">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Links</li>
+              
+        {% for link in page.links %}
+          <li class="list-group-item">
+            <a class="bi bi-{{ link.icon | default: "link-45deg" }}" href="{{ link.url | escape  }}"> {{ link.txt }}</a>
+          </li>
+        {% endfor %}
+    
+    
+      </ul>
+    </div>
+  {% endif %}
+
   {{ content }}
+
 </div>

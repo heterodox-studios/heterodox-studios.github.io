@@ -11,8 +11,10 @@ summary:
 links:
   - url: https://github.com/heterodox-studios/GooglyEyeClock-DIY
     txt: Code on GitHub
+    icon: github
   - url: https://cad.onshape.com/documents/bb07107bfad1942dafd74d3c
-    txt: CAD file on onshape
+    txt: CAD design on onshape
+    icon: file-easel
 
 images:  
   - src: "hero.jpeg"

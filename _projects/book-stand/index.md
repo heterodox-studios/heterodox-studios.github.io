@@ -12,6 +12,13 @@ images:
   - src: "hero.jpeg"
     alt: "Book stand"
 
+links:
+  - icon: file-text
+    txt: Technical documentation
+    url: technical-documentation
+  - icon: file-pdf
+    txt: Declaration of Conformity
+    url: declaration-of-conformity.pdf
 ---
 
 # A good read deserves a good home!

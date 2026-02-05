@@ -12,9 +12,19 @@
   --bs-primary-lighter: #b0b;       
   --bs-primary-lighter-rgb: 187, 0, 187; 
 
+  --bs-primary-text-emphasis: #303;
+  --bs-primary-bg-subtle: #fbf;
+  --bs-primary-border-subtle: #d9d;
+  --bs-border-subtle: #d9d;
+
   --bs-font-sans-serif: "Google Sans Flex", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+
+hr {
+  color: var(--bs-primary-darker);
 }
 
 .btn-primary {
