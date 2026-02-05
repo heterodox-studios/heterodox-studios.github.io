@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Socials"
-permalink: /socials
 ---
 
 Below the latest posts from the various social media sites we are active on.
