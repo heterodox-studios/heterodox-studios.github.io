@@ -1,0 +1,98 @@
+---
+# Note that this layout is intended to produce pages that can be saved as PDFs that can
+# then be added as a static asset after signing.
+#
+# As such hardcoding of urls etc is acceptable.
+
+layout: html-outer
+---
+
+
+<main class="">
+  <div class="container" aria-label="Content">
+
+<h1>EU - Declaration of Conformity</h1>
+
+<h3>Manufacturer:</h3>
+
+<p>
+    Heterodox AB (org number 559424-1092)
+</p>
+
+<p>
+    Albybergsringen 105, lokal 18<br/>
+    137 69 Österhaninge<br/>
+    SWEDEN
+</p>
+
+<p>
+    https://www.heterodox.se/<br/>
+    info@heterodox.se
+</p>
+
+
+<h3>Product description:</h3>
+
+<p>{{ page.description }}</p>
+
+
+<h3>Declaration:</h3>
+
+<p>
+    We declare under our sole responsibility that the above named product is in conformity with the following European Union directive:
+</p>
+
+<ul>
+    {% for directive in page.eu-directives %}
+       <li>{{ directive }}</li>
+    {% else %}
+       <li>None applicable</li>
+    {% endfor %}
+</ul>
+
+
+<p>
+    The compliance with the requirements of the European Directives was proven by the application of the following harmonized standards:
+</p>
+
+<ul>
+    {% for standard in page.harmonized-standards %}
+       <li>{{ standard }}</li>
+    {% else %}
+       <li>None applicable</li>
+    {% endfor %}
+</ul>
+
+
+<p>
+    The conformity assessment procedure has been performed by the manufacturer.
+</p>
+
+
+<h3>Signature</h3>
+
+<p>
+    <strong>Place of issue:</strong> Stockholm, Sweden.
+</p>
+
+<p>
+    <strong>Date of issue:</strong> {{ page.date_of_issue }}
+</p>
+
+<p>
+    <strong>Authorized person:</strong> {{ page.authorized_person }}
+</p>
+
+<p>
+    <strong>Signature of authorized person:</strong>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</p>
+
+
+   </div>
+</main>
+
