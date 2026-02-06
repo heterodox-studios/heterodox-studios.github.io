@@ -60,6 +60,7 @@ header_pages:
 #
 exclude:
   - README.md
+  - LICENSE.md
   - gemfiles/
   - Gemfile
   - Gemfile.lock
