@@ -16,9 +16,9 @@ links:
   - icon: file-text
     txt: Technical documentation
     url: technical-documentation
-  - icon: file-pdf
+  - icon: file-text
     txt: Declaration of Conformity
-    url: declaration-of-conformity.pdf
+    url: declaration-of-conformity
 ---
 
 # A good read deserves a good home!

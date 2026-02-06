@@ -6,7 +6,7 @@ layout: page
 ---
 
 
-The book stand is intended for domestic use to hold a book open at the current page when not being read. It utilises the book to complete the design - for example the book becomes the roof on a house. It is made of metal sheet laser cut, bent and then powder coated. The base and indise are lined, for example with a cork mat or EPA foam.
+The book stand is intended for domestic use to hold a book open at the current page when not being read. It utilises the book to complete the design - for example the book becomes the roof on a house. It is made of metal sheet laser cut, bent and then powder coated. The base and inside are lined, for example with a cork mat or EPA foam.
 
 ## Product Details
 
@@ -29,7 +29,7 @@ The book stand is intended for domestic use to hold a book open at the current p
 : Powder coated steel body with cork and EPA foam linings.
 
 **Declaration of Conformity (DoC)**
-: See separate file.
+: [Content available here](../declaration-of-conformity) (Signed copy available on request)
 
 **Dimensions**
 : 150mm tall, 160mm wide, 168mm deep.
