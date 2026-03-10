@@ -38,6 +38,7 @@ permalink: /:path
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 collections:
   projects:
