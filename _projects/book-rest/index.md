@@ -2,6 +2,8 @@
 layout: project
 title: Book Rest
 permalink: /projects/book-rest/
+redirect_from:
+  - /projects/book-stand/
 
 # idea, active, stalled, completed
 status: active
