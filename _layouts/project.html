@@ -44,10 +44,7 @@ layout: default
 <div class="container my-4 text-center">
   {% for image in page.images %}
 
-    <a href="{{ image.src }}">
-      <img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100"
-        loading="lazy">
-    </a>
+    <a href="{{ image.src }}"><img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100" loading="lazy"></a>
   {% endfor %}
 </div>
 
