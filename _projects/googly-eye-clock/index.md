@@ -13,7 +13,7 @@ links:
     txt: Code on GitHub
     icon: github
   - url: https://cad.onshape.com/documents/bb07107bfad1942dafd74d3c
-    txt: CAD design on onShape
+    txt: CAD design on Onshape
     icon: file-easel
 
 images:  
