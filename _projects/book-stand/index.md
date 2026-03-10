@@ -35,9 +35,6 @@ links:
   - icon: shop
     url: https://www.etsy.com/se-en/listing/4459892587/house-book-stand
     txt: Buy on Etsy
-  - icon: github
-    url: https://github.com/heterodox-studios/book-rest
-    txt: Code on GitHub
   - icon: file-easel
     url: https://cad.onshape.com/documents/75d9a0791a05f109c824994b/w/835adcaa57e20d6a88fd7cb6/e/d00e4df9cd9039d8c556036a?renderMode=0&uiState=69afd30664b4c36770209aa1
     txt: CAD design on onShape
@@ -47,6 +44,9 @@ links:
   - icon: file-text
     txt: Declaration of Conformity
     url: declaration-of-conformity
+  - icon: github
+    url: https://github.com/heterodox-studios/book-rest
+    txt: Documentation etc on GitHub
     
 ---
 
