@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Book Stand
-permalink: /projects/book-stand/
+title: Book Rest
+permalink: /projects/book-rest/
 
 # idea, active, stalled, completed
 status: active
