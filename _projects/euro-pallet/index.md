@@ -10,7 +10,7 @@ summary:
 
 links:
   - icon: shop
-    url: https://shop.heterodox.se
+    url: https://shop.heterodox.se/products/euro-pallet-1-10-scale
     txt: Buy direct from us
   - icon: file-easel
     url: https://cad.onshape.com/documents/e4d7ce6cc853225c9ccabbf4
