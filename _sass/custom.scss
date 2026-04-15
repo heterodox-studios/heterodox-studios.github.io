@@ -3,23 +3,24 @@
 
 
 :root, [data-bs-theme=light] {
-  --bs-primary: #a0a;       
-  --bs-primary-rgb: 170, 0, 170; 
+  --bs-primary: #5b21b6;
+  --bs-primary-rgb: 91, 33, 182;
 
-  --bs-primary-darker: #808;       
-  --bs-primary-darker-rgb: 136, 0, 136; 
+  --bs-primary-darker: #4c1d96;
+  --bs-primary-darker-rgb: 76, 29, 150;
 
-  --bs-primary-lighter: #b0b;       
-  --bs-primary-lighter-rgb: 187, 0, 187; 
+  --bs-primary-lighter: #7c3aed;
+  --bs-primary-lighter-rgb: 124, 58, 237;
 
-  --bs-primary-text-emphasis: #303;
-  --bs-primary-bg-subtle: #fbf;
-  --bs-primary-border-subtle: #d9d;
-  --bs-border-subtle: #d9d;
+  --bs-primary-text-emphasis: #2e1065;
+  --bs-primary-bg-subtle: #ede9fe;
+  --bs-primary-border-subtle: #c4b5fd;
+  --bs-border-subtle: #c4b5fd;
 
   --bs-font-sans-serif: "Google Sans Flex", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 
@@ -30,9 +31,17 @@ hr {
 .btn-primary {
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-bg: var(--bs-primary-darker); /* Slightly darker shade */
+  --bs-btn-hover-bg: var(--bs-primary-darker);
   --bs-btn-hover-border-color: var(--bs-primary-darker);
   --bs-btn-active-bg: var(--bs-primary-lighter);
   --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+}
+
+// Serif headings
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-family: var(--bs-font-heading);
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
