@@ -20,6 +20,14 @@ links:
     txt: Files and documentation on GitHub
 
 images:
+  - src: "images/pallets-stacked-angle.jpg"
+    alt: "Blue mini pallets — one leaning against a stack, angled view"
+  - src: "images/pallet-single-top.jpg"
+    alt: "Single blue mini pallet, top-down view"
+  - src: "images/stack-angle.jpg"
+    alt: "Stack of blue mini pallets, angled view from above"
+  - src: "images/stack-front.jpg"
+    alt: "Stack of blue mini pallets, straight-on front view"
 
 ---
 
