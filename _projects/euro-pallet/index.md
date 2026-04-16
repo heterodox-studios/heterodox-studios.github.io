@@ -16,8 +16,11 @@ links:
     url: https://cad.onshape.com/documents/e4d7ce6cc853225c9ccabbf4
     txt: CAD design on Onshape
   - icon: github
-    url: https://github.com/heterodox-studios/minis/tree/main/Euro%20pallet%20one%20tenth%20scale
+    url: https://github.com/heterodox-studios/minis/tree/main/euro-pallet-1-10-scale
     txt: Files and documentation on GitHub
+  - icon: tools
+    url: https://github.com/heterodox-studios/minis/blob/main/euro-pallet-1-10-scale/README.md#assembly-instructions
+    txt: Assembly instructions
 
 images:
   - src: "images/pallets-stacked-angle.jpg"
