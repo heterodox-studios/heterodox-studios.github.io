@@ -4,6 +4,8 @@ layout: page
 permalink: /projects/
 ---
 
+<p class="lead">These are projects we've worked on, or are working on.</p>
+
 {% assign top_level = site.projects | where_exp: 'item', "item.path contains '/index.md'" %}
 
 {% for project in top_level %}
