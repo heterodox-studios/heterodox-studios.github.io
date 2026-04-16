@@ -37,6 +37,22 @@ hr {
   --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
 }
 
+// Project status bookmark tag
+.project-status-tag {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  z-index: 1;
+}
+
 // Page headings
 .post-header {
   padding-top: 2rem;
