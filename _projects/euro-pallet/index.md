@@ -21,6 +21,9 @@ links:
   - icon: tools
     url: https://github.com/heterodox-studios/minis/blob/main/euro-pallet-1-10-scale/README.md#assembly-instructions
     txt: Assembly instructions
+  - icon: tools
+    url: https://makerworld.com/en/models/2668359-euro-pallet-1-10-scale-with-magnets-for-stacking#profileId-2953096
+    txt: Maker World
 
 images:
   - src: "images/pallets-stacked-angle.jpg"
