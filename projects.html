@@ -14,13 +14,13 @@ permalink: /projects/
 
   <div class="card float-start m-3 position-relative" style="width: 14rem;">
     {% if project.status == "idea" %}
-      <span class="project-status-tag bg-info bi-lightbulb"></span>
+      <span class="project-status-tag bg-info bi-lightbulb" data-bs-toggle="tooltip" title="Just an idea..."></span>
     {% elsif project.status == "active" %}
-      <span class="project-status-tag bg-warning bi-rocket-takeoff-fill"></span>
+      <span class="project-status-tag bg-warning bi-rocket-takeoff-fill" data-bs-toggle="tooltip" title="Working on it now!"></span>
     {% elsif project.status == "stalled" %}
-      <span class="project-status-tag bg-secondary bi-hourglass-split"></span>
+      <span class="project-status-tag bg-secondary bi-hourglass-split" data-bs-toggle="tooltip" title="Stalled"></span>
     {% elsif project.status == "completed" %}
-      <span class="project-status-tag bg-success bi-hand-thumbs-up-fill"></span>
+      <span class="project-status-tag bg-success bi-hand-thumbs-up-fill" data-bs-toggle="tooltip" title="Completed!"></span>
     {% endif %}
     <img src="{{ project.permalink }}{{ hero.src  }}" class="card-img-top" alt="{{ hero.alt }}">
     <div class="card-body">
