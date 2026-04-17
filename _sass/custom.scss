@@ -37,6 +37,24 @@ hr {
   --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
 }
 
+// Graph paper background
+body {
+  background-color: #f7f6f2;
+  background-image:
+    linear-gradient(rgba(91, 33, 182, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 33, 182, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(91, 33, 182, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 33, 182, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+// Soften grid in the content area
+main {
+  background-color: rgba(255, 255, 255, 0.75);
+  flex-grow: 1;
+}
+
 // Project status bookmark tag
 .project-status-tag {
   position: absolute;
