@@ -39,7 +39,7 @@ hr {
 
 // Graph paper background
 body {
-  background-color: #f7f6f2;
+  background-color: var(--bs-primary-bg-subtle);
   background-image:
     linear-gradient(rgba(91, 33, 182, 0.12) 1px, transparent 1px),
     linear-gradient(90deg, rgba(91, 33, 182, 0.12) 1px, transparent 1px),
@@ -57,9 +57,9 @@ main {
 
 // Soften grid in the content area
 main .container {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.70);
   min-height: 100%;
-  box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.70);
 }
 
 // Project status bookmark tag
