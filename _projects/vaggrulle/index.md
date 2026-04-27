@@ -27,9 +27,15 @@ links:
   
 images:
   - src: "images/hero.jpg"
-    alt: "VÄGGRULLE mounted on a wall — fresh paper feeding up from the bottom shelf, used paper rolling onto the top"
-  - src: "images/detail-1.jpg"
-    alt: "Close-up of the bottom shelf holding pens, a coffee cup and post-it notes"
+    alt: "VÄGGRULLE mounted on a wall, with a hand-drawn diagram on the paper showing the shelves and the upward-feeding paper scroll"
+  - src: "images/top-shelf-with-paper.jpg"
+    alt: "Close-up of the upper shelf — permanent markers stored on the small shelf, the take-up paper roll behind, paper hanging down in front"
+  - src: "images/bottom-shelf-detail.jpg"
+    alt: "Close-up of the lower shelf with a mug of coloured pens, post-it notes and a coffee mug; the paper roll sits in the holder below"
+  - src: "images/parts-flat-pack.jpg"
+    alt: "The four white powder-coated steel parts laid out flat alongside screws and plastic spacers, ready to ship"
+  - src: "images/fixings-detail.jpg"
+    alt: "Close-up of the fixings — four screws, four plastic spacers and two powder-coated magnets"
 
 ---
 
