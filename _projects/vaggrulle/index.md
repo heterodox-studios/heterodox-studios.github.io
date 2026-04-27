@@ -2,6 +2,7 @@
 layout: project
 title: Väggrulle
 permalink: /projects/vaggrulle/
+date: 2026-04-27
 
 # idea, active, stalled, completed
 status: active

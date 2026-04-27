@@ -2,6 +2,7 @@
 layout: project
 title: Euro Pallet - 1/10 Scale
 permalink: /projects/euro-pallet/
+date: 2026-04-15
 
 # idea, active, stalled, completed
 status: completed

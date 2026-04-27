@@ -2,6 +2,7 @@
 layout: project
 title: Book Rest
 permalink: /projects/book-rest/
+date: 2026-01-28
 redirect_from:
   - /projects/book-stand/
 

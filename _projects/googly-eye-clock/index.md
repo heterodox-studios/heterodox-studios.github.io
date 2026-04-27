@@ -2,6 +2,7 @@
 layout: project
 title: Googly Eye Clock
 permalink: /projects/googly-eye-clock/
+date: 2026-01-23
 
 # idea, active, stalled, completed
 status: active
