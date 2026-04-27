@@ -12,9 +12,29 @@ title:  "Welcome"
 
         <p class="lead mb-4">We're a small design studio making objects worth understanding. Each piece comes with open files and a documented process — so you can build it yourself, make it your own, or simply see the thinking behind it.</p>
 
+        <hr class="mb-4">
+
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="/projects/">Projects</a>
             {% comment %} <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> {% endcomment %}
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            {% assign projects = site.projects
+                | where_exp: 'item', "item.path contains '/index.md'"
+                | sort: 'date' | reverse %}
+            {% for project in projects %}
+                {% assign hero = project.images | first %}
+                <a href="{{ project.url }}" class="d-block" title="{{ project.title | escape }}">
+                    <img src="{{ project.permalink }}{{ hero.src }}"
+                         alt="{{ hero.alt | escape }}"
+                         class="rounded-3 border shadow"
+                         style="width: 100px; height: 100px; object-fit: cover;"
+                         loading="lazy">
+                </a>
+            {% endfor %}
         </div>
     </div>
 </div>
