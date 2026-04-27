@@ -22,9 +22,9 @@ permalink: /projects/
     {% elsif project.status == "completed" %}
       <span class="project-status-tag bg-success bi-hand-thumbs-up-fill" data-bs-toggle="tooltip" title="Completed!"></span>
     {% endif %}
-    <img src="{{ project.permalink }}{{ hero.src  }}" class="card-img-top" alt="{{ hero.alt }}">
+    <img src="{{ project.permalink }}{{ hero.src  }}" class="card-img-top" alt="{{ hero.alt | escape }}">
     <div class="card-body">
-      <p class="card-text">{{ project.summary }}</p>
+      <p class="card-text">{{ project.summary | escape }}</p>
       <a href="{{ project.url }}" class="btn btn-primary stretched-link">{{ project.title }}</a>
     </div>
   </div>

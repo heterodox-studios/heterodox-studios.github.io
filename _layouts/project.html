@@ -20,15 +20,15 @@ layout: default
 
 
     {% if page.status == "idea" %}
-      <button type="button" class="btn btn-info bi-lightbulb">&nbsp;Just an idea...</button>
+      <span class="btn btn-info bi-lightbulb disabled" aria-disabled="true">&nbsp;Just an idea...</span>
     {% elsif page.status == "active" %}
-      <button type="button" class="btn btn-warning bi-rocket-takeoff-fill">&nbsp;Working on it now!</button>
+      <span class="btn btn-warning bi-rocket-takeoff-fill disabled" aria-disabled="true">&nbsp;Working on it now!</span>
     {% elsif page.status == "stalled" %}
-      <button type="button" class="btn btn-secondary bi-hourglass-split">&nbsp;Stalled</button>
+      <span class="btn btn-secondary bi-hourglass-split disabled" aria-disabled="true">&nbsp;Stalled</span>
     {% elsif page.status == "completed" %}
-      <button type="button" class="btn btn-success bi-hand-thumbs-up-fill">&nbsp;Completed!</button>
+      <span class="btn btn-success bi-hand-thumbs-up-fill disabled" aria-disabled="true">&nbsp;Completed!</span>
     {% else %}
-      <button type="button" class="btn btn-danger bi-bug-fill">&nbsp;BAD STATUS</button>
+      <span class="btn btn-danger bi-bug-fill disabled" aria-disabled="true">&nbsp;BAD STATUS</span>
     {% endif %}
     <br/>
 
@@ -44,7 +44,7 @@ layout: default
 <div class="container my-4 text-center">
   {% for image in page.images %}
 
-    <a href="{{ image.src }}"><img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100" loading="lazy"></a>
+    <a href="{{ image.src }}" target="_blank" rel="noopener"><img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100" loading="lazy"></a>
   {% endfor %}
 </div>
 
@@ -53,7 +53,7 @@ layout: default
 
 <div class="clearfix">
 
-  {% if page.links.size > 1 %}
+  {% if page.links.size >= 1 %}
     <div class="col-md-3 float-sm-end mb-3 ms-md-3">
       <ul class="list-group">
         <li class="list-group-item list-group-item-primary">Links</li>
