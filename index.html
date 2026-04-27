@@ -37,5 +37,20 @@ title:  "Welcome"
             {% endfor %}
         </div>
     </div>
+
+    {% if site.posts.size > 0 %}
+    <div class="col-lg-6 mx-auto mt-5">
+        <hr class="mb-4">
+        <h2 class="h5 mb-3">From the blog</h2>
+        <ul class="list-unstyled mb-0">
+            {% for post in site.posts limit:5 %}
+                <li class="mb-2">
+                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    <span class="text-body-secondary small">— <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
 </div>
 
