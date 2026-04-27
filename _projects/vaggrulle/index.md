@@ -1,6 +1,6 @@
 ---
 layout: project
-title: VÄGGRULLE - the wall mounted shelf, paper-scroll combo
+title: VÄGGRULLE — the wall-mounted shelf and paper-scroll combo
 permalink: /projects/vaggrulle/
 
 # idea, active, stalled, completed
@@ -35,10 +35,12 @@ images:
 
 # A scrolling whiteboard that never asks you to erase anything
 
-VÄGGRULLE is a wall-mounted paper roll holder with a twist: the paper feeds from the *bottom*, not the top. Fresh paper rolls up from a shelf at floor-of-the-board level, climbs the wall behind a small upper shelf, and the used portion winds itself onto a take-up roll at the top. Magnets hold the sheet flat so you can write on it as if it were a whiteboard.
+VÄGGRULLE is a wall-mounted paper roll holder with a twist: the paper feeds from the *bottom*, not the top. Fresh paper rolls up from the lower unit, climbs the wall behind a small upper shelf, and winds onto a take-up roll at the top. Magnets hold the paper flat so you can write on it as if it were a whiteboard.
 
-Bottom-feed matters. It matches how we write — when you need more space, you pull more paper down from above what you've just written, the way a notebook works. Nothing ever needs to be erased. Receipts, sketches and to-do lists all roll quietly into the archive, and you decide what to do with them when the roll runs out.
+Bottom-feed matters. It matches how we write — when you need more space you get it *below* what you've just written. Nothing ever needs to be erased. Receipts, sketches and to-do lists all roll quietly into the archive, and you decide what to do with them when the roll runs out.
 
-The build is deliberately simple: four pieces of 0.8 mm steel (punched, folded, powder-coated), four plastic spacers that set the paper gap, four painted screws and two magnets. The big bottom shelf takes a pot of pens, a coffee cup, post-its or your phone; the small upper shelf is for permanent markers and anything else you want kept out of children's reach. It works equally well in an office or a kitchen, and you can mount it tall, short, high or low to fit the wall.
+Assembly is simple — no harder than fixing a couple of shelves to the wall.
 
-The CAD files are open — print, fabricate, or remix to suit your own wall. Pair it with any standard roll of drawing paper (IKEA's MÅLA roll fits nicely).
+The big bottom shelf takes a pot of pens, a coffee cup, post-its or your phone; the small upper shelf is for permanent markers and other items best kept above small hands. It works equally well in an office or a kitchen, and you can mount it tall, short, high or low to fit the wall.
+
+The CAD files are open on Onshape under a CC BY-NC-SA licence. Pair it with any standard 45 cm wide drawing-paper roll — IKEA's MÅLA (article 704.610.88) fits nicely.
