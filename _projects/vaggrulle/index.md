@@ -10,20 +10,20 @@ summary:
 
 links:
   - icon: shop
-    url: https://shop.heterodox.se/products/TODO
+    url: https://shop.heterodox.se/products/vaggrulle-wall-roll-holder
     txt: Buy direct from us
   - icon: file-easel
-    url: https://cad.onshape.com/documents/TODO
+    url: https://cad.onshape.com/documents/37ab526814be1d3adfa3d88a/w/21a39b4a91f2cb46bf5f886b/e/14498056990fb952585da8d3
     txt: CAD design on Onshape
   - icon: github
     url: https://github.com/heterodox-studios/minis/tree/main/vaggrulle
     txt: Files and documentation on GitHub
   - icon: tools
-    url: https://github.com/heterodox-studios/minis/blob/main/vaggrulle/README.md#assembly-instructions
+    url: https://github.com/heterodox-studios/minis/blob/main/vaggrulle/assembly-instructions.md
     txt: Assembly instructions
-  - icon: youtube
-    url: https://www.youtube.com/watch?v=TODO
-    txt: Watch on YouTube
+  # - icon: youtube
+  #   url: https://www.youtube.com/watch?v=TODO
+  #   txt: Watch on YouTube
   
 images:
   - src: "images/hero.jpg"
