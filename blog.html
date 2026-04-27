@@ -1,0 +1,24 @@
+---
+title: "Blog"
+layout: page
+permalink: /blog/
+---
+
+<p class="lead">Notes on what we're making, how we're making it, and the small lessons along the way.</p>
+
+{% for post in site.posts %}
+  <article class="mb-4">
+    <h2 class="h4 mb-1">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+    <p class="text-body-secondary small mb-2">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+      {%- if post.author -%}
+        &middot; {{ post.author | escape }}
+      {%- endif -%}
+    </p>
+    {%- if post.excerpt -%}
+      <p class="mb-0">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {%- endif -%}
+  </article>
+{% endfor %}
