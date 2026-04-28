@@ -50,9 +50,70 @@ layout: default
 <div class="container my-4 text-center">
   {% for image in page.images %}
 
-    <a href="{{ image.src }}" target="_blank" rel="noopener"><img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100" loading="lazy"></a>
+    <a href="{{ image.src }}" data-bs-toggle="modal" data-bs-target="#imageLightbox" data-bs-slide-to="{{ forloop.index0 }}"><img src="{{ image.src }}" class="rounded-3 m-2 border shadow" alt="{{ image.alt | escape }}" width="auto" height="100" loading="lazy"></a>
   {% endfor %}
 </div>
+
+{%- comment -%} Lightbox modal with carousel for paging through images {%- endcomment -%}
+<div class="modal fade" id="imageLightbox" tabindex="-1" aria-labelledby="imageLightboxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div id="imageLightboxCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            {% for image in page.images %}
+              <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                <img src="{{ image.src }}" class="d-block w-100 rounded-3" alt="{{ image.alt | escape }}" style="max-height: 80vh; object-fit: contain;">
+                {% if image.alt %}
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="bg-dark bg-opacity-50 rounded p-2 d-inline-block">{{ image.alt | escape }}</p>
+                  </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+          {% if page.images.size > 1 %}
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById('imageLightbox');
+    var carousel = document.getElementById('imageLightboxCarousel');
+    if (!modal || !carousel) return;
+    var items = carousel.querySelectorAll('.carousel-item');
+    modal.addEventListener('show.bs.modal', function (event) {
+      var trigger = event.relatedTarget;
+      if (!trigger) return;
+      var index = parseInt(trigger.getAttribute('data-bs-slide-to'), 10);
+      if (isNaN(index) || index < 0 || index >= items.length) return;
+      items.forEach(function (item, i) {
+        item.classList.toggle('active', i === index);
+      });
+    });
+    var bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel, { interval: false, ride: false });
+    document.addEventListener('keydown', function (e) {
+      if (!modal.classList.contains('show')) return;
+      if (e.key === 'ArrowLeft') bsCarousel.prev();
+      else if (e.key === 'ArrowRight') bsCarousel.next();
+    });
+  })();
+</script>
 
 <hr />
 {% endif %}
