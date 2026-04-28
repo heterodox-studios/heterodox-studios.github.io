@@ -92,27 +92,29 @@ layout: default
 </div>
 
 <script>
-  (function () {
+  document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById('imageLightbox');
     var carousel = document.getElementById('imageLightboxCarousel');
-    if (!modal || !carousel) return;
-    var items = carousel.querySelectorAll('.carousel-item');
+    if (!modal || !carousel || typeof bootstrap === 'undefined') return;
+    var bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel, { interval: false, ride: false });
     modal.addEventListener('show.bs.modal', function (event) {
       var trigger = event.relatedTarget;
       if (!trigger) return;
       var index = parseInt(trigger.getAttribute('data-bs-slide-to'), 10);
-      if (isNaN(index) || index < 0 || index >= items.length) return;
-      items.forEach(function (item, i) {
-        item.classList.toggle('active', i === index);
-      });
+      if (isNaN(index)) return;
+      bsCarousel.to(index);
     });
-    var bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel, { interval: false, ride: false });
     document.addEventListener('keydown', function (e) {
       if (!modal.classList.contains('show')) return;
-      if (e.key === 'ArrowLeft') bsCarousel.prev();
-      else if (e.key === 'ArrowRight') bsCarousel.next();
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        bsCarousel.prev();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        bsCarousel.next();
+      }
     });
-  })();
+  });
 </script>
 
 <hr />
