@@ -65,13 +65,13 @@ layout: default
         <div id="imageLightboxCarousel" class="carousel slide">
           <div class="carousel-inner">
             {% for image in page.images %}
-              <div class="carousel-item{% if forloop.first %} active{% endif %}">
-                <img src="{{ image.src }}" class="d-block w-100 rounded-3" alt="{{ image.alt | escape }}" style="max-height: 80vh; object-fit: contain;">
-                {% if image.alt %}
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="bg-dark bg-opacity-50 rounded p-2 d-inline-block">{{ image.alt | escape }}</p>
-                  </div>
-                {% endif %}
+              <div class="carousel-item{% if forloop.first %} active{% endif %} text-center">
+                <figure class="d-inline-block m-0" style="max-width: 100%;">
+                  <img src="{{ image.src }}" class="d-block rounded-3 mx-auto" alt="{{ image.alt | escape }}" style="max-height: 75vh; max-width: 100%;">
+                  {% if image.alt %}
+                    <figcaption class="text-start text-white rounded p-2 mt-2">{{ image.alt | escape }}</figcaption>
+                  {% endif %}
+                </figure>
               </div>
             {% endfor %}
           </div>
