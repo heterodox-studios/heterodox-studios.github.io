@@ -61,8 +61,13 @@ layout: default
       <div class="modal-header border-0">
         <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body p-0">
-        <div id="imageLightboxCarousel" class="carousel slide">
+      <div class="modal-body p-0 d-flex align-items-center">
+        {% if page.images.size > 1 %}
+          <button class="btn btn-link flex-shrink-0 px-2" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+        {% endif %}
+        <div id="imageLightboxCarousel" class="carousel slide flex-grow-1 overflow-hidden">
           <div class="carousel-inner">
             {% for image in page.images %}
               <div class="carousel-item{% if forloop.first %} active{% endif %} text-center">
@@ -75,17 +80,12 @@ layout: default
               </div>
             {% endfor %}
           </div>
-          {% if page.images.size > 1 %}
-            <button class="carousel-control-prev" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          {% endif %}
         </div>
+        {% if page.images.size > 1 %}
+          <button class="btn btn-link flex-shrink-0 px-2" type="button" data-bs-target="#imageLightboxCarousel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        {% endif %}
       </div>
     </div>
   </div>
