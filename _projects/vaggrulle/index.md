@@ -45,6 +45,10 @@ images:
 
 VÄGGRULLE — Swedish for "wall roll" — is a wall-mounted paper roll holder with a twist: the paper feeds from the *bottom*, not the top. Fresh paper rolls up from the lower holder, climbs the wall behind a small upper shelf, and winds onto a take-up roll at the top. Magnets hold the paper flat so you can write on it like a whiteboard.
 
+<div class="ratio ratio-16x9 my-4" style="max-width: 560px;">
+  <iframe src="https://www.youtube-nocookie.com/embed/d2nPLcyNCWE" title="Väggrulle — pitch to IKEA" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+</div>
+
 Bottom-feed matters. It matches how we write — when you need more space you get it *below* what you've just written. Nothing ever needs to be erased. Receipts, sketches and to-do lists all roll quietly into the archive, and you decide what to do with them when the roll runs out.
 
 Two shelves come built in. The big lower one takes a pot of pens, a coffee cup, post-its or your phone. The small upper one is for permanent markers, the magnets when they're not in use, and anything else best kept above small hands.
