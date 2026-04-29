@@ -10,6 +10,9 @@ summary:
   Write, scroll, archive. Never erase.
 
 links:
+  - icon: youtube
+    url: https://www.youtube.com/watch?v=d2nPLcyNCWE
+    txt: Watch on YouTube
   - icon: shop
     url: https://shop.heterodox.se/products/vaggrulle-wall-roll-holder
     txt: Buy direct from us
@@ -22,9 +25,7 @@ links:
   - icon: tools
     url: https://github.com/heterodox-studios/minis/blob/main/vaggrulle/assembly-instructions.md
     txt: Assembly instructions
-  # - icon: youtube
-  #   url: https://www.youtube.com/watch?v=TODO
-  #   txt: Watch on YouTube
+
   
 images:
   - src: "images/hero.jpg"
